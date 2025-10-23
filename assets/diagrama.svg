@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <style>
+    .actor{fill:#ffdcb6;stroke:#ff6700;stroke-width:2}
+    .usecase{fill:#fff3e6;stroke:#ff6700;stroke-width:2}
+    .label{font:16px 'Poppins',sans-serif;fill:#111}
+  </style>
+  <!-- Actors -->
+  <g transform="translate(60,80)">
+    <circle class="actor" cx="0" cy="0" r="30"/>
+    <text class="label" x="0" y="55" text-anchor="middle">Usuário</text>
+  </g>
+
+  <g transform="translate(740,80)">
+    <circle class="actor" cx="0" cy="0" r="30"/>
+    <text class="label" x="0" y="55" text-anchor="middle">Administrador</text>
+  </g>
+
+  <!-- Use cases -->
+  <g>
+    <ellipse class="usecase" cx="400" cy="80" rx="140" ry="40"/>
+    <text class="label" x="400" y="85" text-anchor="middle">Gerenciar Tarefas</text>
+
+    <ellipse class="usecase" cx="400" cy="170" rx="120" ry="36"/>
+    <text class="label" x="400" y="175" text-anchor="middle">Criar/Editar Tarefa</text>
+
+    <ellipse class="usecase" cx="400" cy="260" rx="100" ry="34"/>
+    <text class="label" x="400" y="265" text-anchor="middle">Visualizar Lista</text>
+  </g>
+
+  <!-- Associations -->
+  <line x1="90" y1="80" x2="260" y2="80" stroke="#777" stroke-width="2" stroke-dasharray="4 2"/>
+  <line x1="540" y1="80" x2="710" y2="80" stroke="#777" stroke-width="2" stroke-dasharray="4 2"/>
+  <line x1="260" y1="80" x2="260" y2="170" stroke="#777" stroke-width="2" stroke-dasharray="4 2"/>
+  <line x1="540" y1="80" x2="540" y2="170" stroke="#777" stroke-width="2" stroke-dasharray="4 2"/>
+
+</svg>
