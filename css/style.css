@@ -211,3 +211,61 @@ html {
     font-size:0.95rem;
     color:#ccc;
 }
+
+/* Telas e protótipos (galeria) */
+#telas-prototipos {
+    background: #0f0f0f;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.prototype-gallery{
+    /* Stack images one below the other and center them */
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 22px;
+    align-items: center;
+    padding: 0 12px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prototype-item{
+    background: #141414;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,103,0,0.06);
+    width: 100%;
+    max-width: 920px; /* controls the large display width */
+}
+
+.prototype-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    /* Let images be large and fill the card width */
+    object-fit: contain;
+}
+
+.prototype-item a:hover img,
+.prototype-item a:focus img{
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.prototype-item figcaption{
+    margin-top: 8px;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 520px){
+    .prototype-gallery{ gap:12px; }
+    section { padding: 60px 18px; }
+}
