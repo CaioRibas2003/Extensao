@@ -16,6 +16,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#quem-somos">Quem Somos</a></li>
                 <li><a href="#tema">Tema</a></li>
+                <li><a href="#produto-viavel-minimo">Produto viável mínimo</a></li>
                 <li><a href="#telas-prototipos">Telas e protótipos</a></li>
                 <li><a href="#comunidade">Comunidade</a></li>
             </ul>
@@ -91,6 +92,61 @@
             trabalho em equipe, resolução de problemas e habilidades práticas. Assim, reforçando o aprendizado
             academico enquanto desenvolvemos uma ferramenta útil para a comunidade estudantil de nossa faculdade
         </p>
+    </section>
+    
+    <!-- Produto viavel minimo -->
+    <section id="produto-viavel-minimo" class="fade-in">
+        <h2>Produto viável mínimo</h2>
+        <p>
+            O projeto propõe o desenvolvimento de uma lista de tarefas que permita ao usuário organizar suas atividades de forma simples e eficiente. O sistema possibilitará a criação de tarefas com título, descrição, data de entrega e nível de urgência, além de permitir que essas informações sejam editadas posteriormente. O usuário também poderá concluir ou deletar uma tarefa quando ela não for mais necessária, seja por cancelamento ou finalização. Considerando que o armazenamento necessário é reduzido, o sistema utilizará persistência de dados local, suficiente para armazenar as tarefas cadastradas pelo usuário.
+        </p>
+        <h3>Cadastro de Tarefas</h3>
+        <div class="task-block">
+            <ul>
+                <li>Campo de preenchimento do título e descrição da tarefa;</li>
+                <li>Definir a data de entrega da tarefa;</li>
+                <li>Definir o nível de urgência da tarefa (baixa, média ou alta).</li>
+            </ul>
+        </div>
+        <img src="assets/mvp01.png" alt="MVP 01" class="mvp-image">
+    </section>
+    
+    <!-- Lista de Tarefas -->
+    <section id="lista-tarefas" class="fade-in">
+        <h2>Lista de Tarefas</h2>
+        <div class="task-block">
+            <ul>
+                <li>Visualização das tarefas cadastradas;</li>
+                <li>Organização das tarefas em seções separadas por nível de urgência;</li>
+                <li>Organização por filtros e buscas simples;</li>
+            </ul>
+        </div>
+        <img src="assets/mvp02.png" alt="MVP 02" class="mvp-image">
+    </section>
+
+    <!-- Concluir Tarefa -->
+    <section id="concluir-tarefa" class="fade-in">
+        <h2>Concluir Tarefa</h2>
+        <div class="task-block">
+            <ul>
+                <li>Botão com a descrição de concluir a tarefa;</li>
+                <li>Registro de tarefas concluídas mantidas por um período máximo de 90 dias.</li>
+                <li>Botões de edição e exclusão</li>
+            </ul>
+        </div>
+        <img src="assets/mvp03.png" alt="MVP 03" class="mvp-image">
+    </section>
+
+    <!-- Exemplos de Cenário -->
+    <section id="exemplos-cenario" class="fade-in">
+        <h2>EXEMPLOS DE CENÁRIO</h2>
+        <div class="task-block">
+            <h3>Cenário com fluxos:</h3>
+            <p>Usuário entra no aplicativo -> cria uma tarefa informando título, descrição e urgência -> a tarefa é mostrada na seção correspondente ao nível da urgência selecionada -> usuário pode editar, deletar ou marcar a tarefa como concluída conforme necessidade.</p>
+
+            <h3 style="margin-top:14px;">Cenário descritivo com exemplo prático:</h3>
+            <p>O usuário é um estudante de Engenharia de Software e precisa se organizar para o período de avaliações. Para isso, ele abre o aplicativo e cria diversas tarefas de todas as matérias e conteúdos que precisará estudar. Buscando realizar um planejamento inteligente, ele classifica as tarefas por nível de urgência, de acordo com as matérias nas quais mais precisa de nota. Assim, cada tarefa recebe um rótulo de baixa, média ou alta urgência. Por fim, o usuário pode editar a tarefa, marcar como concluída ou deletar conforme necessidade.</p>
+        </div>
     </section>
 
     <!-- Diagrama -->

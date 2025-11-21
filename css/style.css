@@ -12,9 +12,16 @@ body {
     line-height: 1.6;
 }
 
+/* espaço para header fixo */
+/* espaço para header fixo (ajustado para altura real do header) */
+body { padding-top: 90px; }
+
 /* Menu */
 header {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -24,9 +31,10 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* center header contents */
     align-items: center;
     padding: 15px 50px;
+    gap: 20px; /* spacing between logo and menu */
 }
 
 nav ul {
@@ -47,12 +55,14 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #ff6700;
     color: #fff;
-    box-shadow: 0 0 10px #ff6700;
+    /* removed glow box-shadow to avoid color fade effect */
 }
 
 .logo {
     height: 50px;
+    margin-right: 8px; /* small spacing to separate from menu when centered */
 }
+
 
 /* Seções */
 section {
@@ -63,14 +73,15 @@ section {
 
 /* Home */
 #home {
-    background: linear-gradient(135deg, #111 0%, #222 100%);
+    /* solid background to remove gradient/fade */
+    background: #111;
 }
 
 #home h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #ff6700;
-    text-shadow: 0 0 10px #ff6700;
+    /* removed glow/text-shadow for a flatter heading */
 }
 
 #home p {
@@ -87,14 +98,15 @@ section {
     border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(255,103,0,0.5);
+    transition: 0.18s ease;
+    /* reduced shadow for a flatter appearance */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
     margin-top: 10px;
 }
 
 .button:hover {
     background-color: #ff8533;
-    box-shadow: 0 8px 20px rgba(255,103,0,0.7);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
 }
 
 /* Quem Somos */
@@ -119,8 +131,9 @@ section {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(255,103,0,0.5);
+    transform: translateY(-8px);
+    /* softened hover shadow to reduce warm glow */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
 }
 
 .card img {
@@ -164,7 +177,7 @@ h2 {
     color: #ff6700;
     font-size: 2rem;
     margin-bottom: 15px;
-    text-shadow: 0 0 8px #ff6700;
+    /* removed heading glow/text-shadow for flatter look */
 }
 
 p {
@@ -212,12 +225,129 @@ html {
     color:#ccc;
 }
 
-/* Telas e protótipos (galeria) */
+/* Telas e protótipos (galeria) - usa o background padronizado */
 #telas-prototipos {
-    background: #0f0f0f;
+    background: #1a1a1a; /* padronizado com outras sections */
     padding-top: 40px;
     padding-bottom: 60px;
 }
+
+/* Padroniza cor de background das principais sections para cinza escuro */
+#tema,
+#produto-viavel-minimo,
+#lista-tarefas,
+#concluir-tarefa,
+#telas-prototipos,
+#comunidade,
+#exemplos-cenario,
+#diagrama,
+#quem-somos {
+    background: #1a1a1a; /* cinza escuro padronizado */
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+/* Produto viavel minimo (uses the standardized background above) */
+
+/* Agrupa as seções relacionadas ao MVP para parecerem um bloco único */
+
+/* end of previous grouping styles (removed to revert to earlier layout) */
+
+/* Padrão visual para blocos/sections do site — aplica separação consistente entre blocos */
+.task-block{
+    background: #121212;
+    padding: 18px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 820px;
+    margin: 0 auto 28px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,103,0,0.06);
+    text-align: left;
+}
+
+.task-block ul{
+    list-style: disc; /* keep bullets visible */
+    padding-left: 1.2rem;
+    line-height: 1.7;
+}
+
+.task-block ul li{ color: #ddd; margin-bottom: 10px; font-size: 1rem; }
+
+#produto-viavel-minimo h3{
+    margin-top: 18px;
+    margin-bottom: 14px;
+    color: #ff6700;
+    font-size: 2rem;
+    /* removed glow/text-shadow for a flatter header */
+}
+
+#produto-viavel-minimo ul{
+    max-width: 820px;
+    margin: 0 auto 28px;
+    padding-left: 1.15rem;
+    line-height: 1.8;
+    display:flex;
+    flex-direction:column;
+    align-items:center; /* centraliza o bloco de itens */
+    gap:8px;
+}
+
+/* Itens centralizados — texto centrado para melhor leitura dentro do bloco */
+#produto-viavel-minimo ul li{
+    margin-bottom: 0;
+    text-align: center;
+    list-style-position: inside;
+    width: 100%;
+}
+
+/* Imagem do MVP, exibida logo após a lista */
+.mvp-image{
+    display:block;
+    margin: 12px auto 36px;
+    max-width: 920px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,103,0,0.06);
+}
+
+/* Imagem menor especificamente para a seção Concluir Tarefa */
+#concluir-tarefa .mvp-image{
+    max-width: 640px; /* reduzida para ficar visualmente menor */
+}
+
+/* Lista de Tarefas - seguir mesma apresentação centralizada de bullets */
+#lista-tarefas ul{
+    max-width: 820px;
+    margin: 0 auto 28px;
+    padding-left: 1.15rem;
+    line-height: 1.8;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+}
+
+#lista-tarefas ul li{
+    margin-bottom: 0;
+    text-align: center;
+    list-style-position: inside;
+    width: 100%;
+}
+
+/* Match heading style with Produto viavel minimo */
+#lista-tarefas h3, #lista-tarefas h2{
+    color: #ff6700;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    /* removed glow/text-shadow for consistency */
+}
+
+/* Lista de tarefas (uses the standardized background above) */
+
+
 
 .prototype-gallery{
     /* Stack images one below the other and center them */
@@ -268,4 +398,7 @@ html {
 @media (max-width: 520px){
     .prototype-gallery{ gap:12px; }
     section { padding: 60px 18px; }
+    /* Stack header items vertically on small screens */
+    nav { flex-direction: column; gap: 10px; padding: 12px 18px; }
+    nav ul { flex-wrap: wrap; justify-content: center; }
 }

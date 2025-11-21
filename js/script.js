@@ -31,3 +31,4 @@ faders.forEach(fader => {
 });
 
 console.log("Site carregado!");
+
