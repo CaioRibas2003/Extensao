@@ -16,7 +16,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#quem-somos">Quem Somos</a></li>
                 <li><a href="#tema">Tema</a></li>
-                <li><a href="#produto-viavel-minimo">Produto viável mínimo</a></li>
                 <li><a href="#telas-prototipos">Telas e protótipos</a></li>
                 <li><a href="#comunidade">Comunidade</a></li>
             </ul>
@@ -85,51 +84,6 @@
         </p>
     </section>
     
-    <!-- Produto viavel minimo -->
-    <section id="produto-viavel-minimo" class="fade-in">
-        <h2>Produto viável mínimo</h2>
-        <p>
-            O projeto propõe o desenvolvimento de uma lista de tarefas que permita ao usuário organizar suas atividades de forma simples e eficiente. O sistema possibilitará a criação de tarefas com título, 
-            descrição, data de entrega e nível de urgência, além de permitir que essas informações sejam editadas posteriormente. O usuário também poderá concluir ou deletar uma tarefa quando ela não for mais necessária, 
-            seja por cancelamento ou finalização. Considerando que o armazenamento necessário é reduzido, o sistema utilizará persistência de dados local, suficiente para armazenar as tarefas cadastradas pelo usuário.
-        </p>
-        <h3>Cadastro de Tarefas</h3>
-        <div class="task-block">
-            <ul>
-                <li>Campo de preenchimento do título e descrição da tarefa;</li>
-                <li>Definir a data de entrega da tarefa;</li>
-                <li>Definir o nível de urgência da tarefa (baixa, média ou alta).</li>
-            </ul>
-        </div>
-        <img src="assets/mvp01.png" alt="MVP 01" class="mvp-image">
-    </section>
-    
-    <!-- Lista de Tarefas -->
-    <section id="lista-tarefas" class="fade-in">
-        <h2>Lista de Tarefas</h2>
-        <div class="task-block">
-            <ul>
-                <li>Visualização das tarefas cadastradas;</li>
-                <li>Organização das tarefas em seções separadas por nível de urgência;</li>
-                <li>Organização por filtros e buscas simples.</li>
-            </ul>
-        </div>
-        <img src="assets/mvp02.png" alt="MVP 02" class="mvp-image">
-    </section>
-
-    <!-- Concluir Tarefa -->
-    <section id="concluir-tarefa" class="fade-in">
-        <h2>Concluir Tarefa</h2>
-        <div class="task-block">
-            <ul>
-                <li>Botão com a descrição de concluir a tarefa;</li>
-                <li>Registro de tarefas concluídas mantidas por um período máximo de 90 dias;</li>
-                <li>Botões de edição e exclusão.</li>
-            </ul>
-        </div>
-        <img src="assets/mvp03.png" alt="MVP 03" class="mvp-image">
-    </section>
-
     <!-- Exemplos de Cenário -->
     <section id="exemplos-cenario" class="fade-in">
         <h2>EXEMPLOS DE CENÁRIO</h2>
@@ -146,8 +100,8 @@
     <section id="diagrama" class="fade-in">
         <h2>Diagrama de caso de uso</h2>
         <div class="diagram-container">
-            <a href="assets/diagrama.png" target="_blank" rel="noopener noreferrer">
-                <img src="assets/diagrama.png" alt="Diagrama de caso de uso" class="diagram">
+            <a href="assets/casodeuso.jpeg" target="_blank" rel="noopener noreferrer">
+                <img src="assets/casodeuso.jpeg" alt="Diagrama de caso de uso" class="diagram">
             </a>
             <p class="caption">Figura: Diagrama de caso de uso do sistema To-do List (clique para ampliar)</p>
         </div>
@@ -155,26 +109,65 @@
 
     <!-- Telas e protótipos -->
     <section id="telas-prototipos" class="fade-in">
-        <h2>Telas</h2>
+        <h2>Telas e Protótipos</h2>
 
-        <div class="prototype-gallery">
-            <figure class="prototype-item">
-                <a href="assets/tela01.png" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/tela01.png" alt="Tela 01">
-                </a>
-            </figure>
+        <div class="prototype-carousel" aria-label="Carrossel de protótipos MVP">
+            <button class="carousel-btn prev" type="button" aria-label="Imagem anterior">&#10094;</button>
 
-            <figure class="prototype-item">
-                <a href="assets/tela03.png" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/tela03.png" alt="Tela 03">
-                </a>
-            </figure>
+            <div class="carousel-track">
+                <figure class="carousel-slide active">
+                    <a href="assets/mvp1.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/mvp1.jpeg" alt="MVP 1">
+                    </a>
+                    <figcaption>MVP 1</figcaption>
+                </figure>
 
-            <figure class="prototype-item">
-                <a href="assets/tela02.png" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/tela02.png" alt="Tela 02">
-                </a>
-            </figure>
+                <figure class="carousel-slide">
+                    <a href="assets/mvp2.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/mvp2.jpeg" alt="MVP 2">
+                    </a>
+                    <figcaption>MVP 2</figcaption>
+                </figure>
+
+                <figure class="carousel-slide">
+                    <a href="assets/mvp3.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/mvp3.jpeg" alt="MVP 3">
+                    </a>
+                    <figcaption>MVP 3</figcaption>
+                </figure>
+
+                <figure class="carousel-slide">
+                    <a href="assets/mvp4.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/mvp4.jpeg" alt="MVP 4">
+                    </a>
+                    <figcaption>MVP 4</figcaption>
+                </figure>
+
+                <figure class="carousel-slide">
+                    <a href="assets/mvp5.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/mvp5.jpeg" alt="MVP 5">
+                    </a>
+                    <figcaption>MVP 5</figcaption>
+                </figure>
+
+                <figure class="carousel-slide">
+                    <a href="assets/mvp6.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/mvp6.jpeg" alt="MVP 6">
+                    </a>
+                    <figcaption>MVP 6</figcaption>
+                </figure>
+            </div>
+
+            <button class="carousel-btn next" type="button" aria-label="Próxima imagem">&#10095;</button>
+
+            <div class="carousel-dots" aria-label="Navegação do carrossel">
+                <button class="carousel-dot active" type="button" aria-label="Ir para MVP 1"></button>
+                <button class="carousel-dot" type="button" aria-label="Ir para MVP 2"></button>
+                <button class="carousel-dot" type="button" aria-label="Ir para MVP 3"></button>
+                <button class="carousel-dot" type="button" aria-label="Ir para MVP 4"></button>
+                <button class="carousel-dot" type="button" aria-label="Ir para MVP 5"></button>
+                <button class="carousel-dot" type="button" aria-label="Ir para MVP 6"></button>
+            </div>
         </div>
     </section>
 

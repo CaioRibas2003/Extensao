@@ -30,5 +30,44 @@ faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
 
+// Carrossel de MVPs
+const carousel = document.querySelector('.prototype-carousel');
+
+if (carousel) {
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const prevBtn = carousel.querySelector('.carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.carousel-btn.next');
+    let currentIndex = 0;
+
+    const setActiveSlide = (index) => {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+
+        currentIndex = index;
+    };
+
+    prevBtn.addEventListener('click', () => {
+        const nextIndex = (currentIndex - 1 + slides.length) % slides.length;
+        setActiveSlide(nextIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        setActiveSlide(nextIndex);
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => setActiveSlide(index));
+    });
+
+    setActiveSlide(0);
+}
+
 console.log("Site carregado!");
 
